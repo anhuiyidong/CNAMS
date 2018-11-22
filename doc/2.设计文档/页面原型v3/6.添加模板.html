@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加模板</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <script>
+    $(function(){
+        $("#add").click(function(){
+            $(".box").show();
+        });
+        $("#close").click(function(){
+            $(".box").hide();
+        });
+    })
+    </script>
+</head>
+<body>
+<div class="html-body">
+    <div class="container">
+        <div class="register-software-body">
+            <div class="register-software-title">
+                <img src="images/cd.png">
+                <span>添加模板</span>
+            </div>
+            <div class="register-body">
+                <table cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td class="td-title"><span>*</span>模板名称：</td>
+                        <td class="td-body"><input type="text" placeholder="请输入模板名称" /></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="software-info">
+                    <div class="software-info-title">步骤信息<button>添加步骤</button></div>
+                    <table cellpadding="0" cellspacing="0" class="stetable">
+                        <tbody>
+                        <tr>
+                            <td class="td-title"><span>*</span>步骤名称：</td>
+                            <td class="td-body"><input type="text" placeholder="请输入步骤名称" /><img class="icon_del" src="images/icon_del.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-title"><span>*</span>关联网元：</td>
+                            <td class="td-body"><input type="text" placeholder="请输入关联网元" /><input type="button" class="btn1" value="选择" id="add"></td>
+                        </tr>
+                        <tr>
+                            <td class="td-title" style="vertical-align: top"><span>*</span>脚本：</td>
+                            <td class="td-body"><textarea style=" width: 60%; height: 180px"></textarea><span class="note">注释文字</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">模板说明：</td>
+                            <td class="td-body"><textarea style=" width: 60%; height: 70px"></textarea></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="submit-btn-body">
+            <input type="button" class="btn1" value="保存">
+        </div>
+    </div>
+</div>
+<!-- 弹出框 -->
+<div class="box">
+    <div class="box-main">
+        <div class="box-title">选择关联网元<span id="close">×</span></div>
+        <div class="box-con">
+            <div class="query" style="box-shadow: none;">
+            <div class="query-title">
+                <div class="query-btn item" style=" text-align: left; border-top: none; margin-top: 0;">
+                    <p>
+                        <label><i>地市：</i><select><option>合肥</option><option>蚌埠</option><option>安庆</option></select></label>
+                        <label><i>网元类型：</i><select><option>MME</option><option>SAEGW</option><option>DNS</option></select></label>
+                    </p>
+                    <p>
+                        <label><i>网元名称：</i><input type="text" placeholder="请输入网元名称"></label>
+                        <label><i>IP地址：</i><input type="text" placeholder="请输入IP地址"></label>
+                        <input type="button" value="查询">
+                        <input type="button" value="高级搜索">
+                    </p>
+                </div>
+            </div>
+            <div class="body-table">
+                <table cellspacing="0" cellpadding="0" >
+                    <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>网元名称</th>
+                        <th>IP</th>
+                        <th>厂家</th>
+                        <th>所属网络域</th>
+                        <th>所属地市</th>
+                        <th>创建人</th>
+                        <th>创建时间</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>网元A</td>
+                        <td>120.210.238.140</td>
+                        <td>非度</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="Ctr">
+                        <td><input type="checkbox"></td>
+                        <td>网元B</td>
+                        <td>120.210.238.141</td>
+                        <td>非度</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="submit-btn-body"><input type="button" class="btn1" value="确定"></div>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

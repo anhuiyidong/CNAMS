@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加任务</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <script>
+    $(function(){
+        $("#add").click(function(){
+            $(".box").show();
+        });
+        $("#close").click(function(){
+            $(".box").hide();
+        });
+    })
+    </script>
+</head>
+<body>
+<div class="html-body">
+    <div class="container">
+        <div class="register-software-body">
+            <div class="register-software-title">
+                <img src="images/cd.png">
+                <span>添加任务</span>
+            </div>
+            <div class="register-body">
+                <table cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td class="td-title"><span>*</span>任务名称：</td>
+                        <td class="td-body"><input type="text" placeholder="请输入任务名称" style="width: 616px;" /></td>
+                    </tr>
+                    <tr>
+                        <td class="td-title"><span>*</span>完成时间：</td>
+                        <td class="td-body"><input type="text" style="width: 295px;" value="2018-10-09" /><span class="time-span">-</span><input type="text" style="width: 295px;" value="2018-10-20" /></td>
+                    </tr>
+                    <tr>
+                        <td class="td-title" style=" vertical-align: top; line-height: 30px;"><span>*</span>关联模板：</td>
+                        <td class="td-body"><input type="text" placeholder="请输入关联模板" style="width: 616px;" /><input type="button" class="btn1" value="添加" id="add">
+                             <div class="software-info" style=" margin-left: 10px; border: 1px solid #cae6f5;">
+                                <div class="software-info-title" style=" background: #cae6f5; color: #1286c2;">步骤信息<button>添加步骤</button></div>
+                                <table cellpadding="0" cellspacing="0" class="stetable">
+                                    <tbody>
+                                    <tr>
+                                        <td class="td-title"><span>*</span>步骤名称：</td>
+                                        <td class="td-body"><input type="text" placeholder="请输入步骤名称" /><img class="icon_del" src="images/icon_del.png"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-title"><span>*</span>关联网元：</td>
+                                        <td class="td-body"><input type="text" placeholder="请输入关联网元" /><input type="button" class="btn1" value="选择"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-title" style="vertical-align: top"><span>*</span>脚本：</td>
+                                        <td class="td-body"><textarea></textarea><span class="note">注释文字</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-title">任务说明：</td>
+                                        <td class="td-body"><textarea></textarea></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-title"><span>*</span>所属部门：</td>
+                        <td class="td-body"><select style="width: 616px"><option>group1</option></select></td>
+                    </tr>
+                    <tr>
+                        <td class="td-title" style="vertical-align: top">备注：</td>
+                        <td class="td-body"><textarea style="width: 616px"></textarea></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="submit-btn-body">
+            <input type="button" class="btn1" value="添加">
+        </div>
+    </div>
+</div>
+<!-- 弹出框 -->
+<div class="box">
+    <div class="box-main">
+        <div class="box-title">选择关联网元<span id="close">×</span></div>
+        <div class="box-con">
+            <div class="query" style="box-shadow: none;">
+                <div class="query-btn" style=" border-top: none; margin-top: 0; margin-bottom: 10px; ">
+                    <label>模板名称：<input type="text" placeholder="请输入网元名称"></label>
+                    <input type="button" value="查询">
+                    <input type="button" value="高级搜索">
+                    <input type="button" value="添加指令模板">
+                </div>
+                <div class="body-table">
+                    <table cellspacing="0" cellpadding="0" >
+                        <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>模板ID</th>
+                            <th>模板名称</th>
+                            <th>创建时间</th>
+                            <th>关联网元名称</th>
+                            <th>相关任务数</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>SAEGW一键隔离</td>
+                            <td>2018-09-11</td>
+                            <td>1</td>
+                            <td>11</td>
+                        </tr>
+                        <tr class="Ctr">
+                            <td><input type="checkbox"></td>
+                            <td>2</td>
+                            <td>模板2</td>
+                            <td>2018-09-10</td>
+                            <td>2</td>
+                            <td>11</td>
+                        </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <div class="submit-btn-body"><input type="button" class="btn1" value="确定"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

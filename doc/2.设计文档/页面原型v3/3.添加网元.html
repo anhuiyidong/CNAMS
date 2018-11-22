@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="html-body">
+    <div class="container">
+        <div class="register-software-body">
+            <div class="register-software-title">
+                <img src="images/cd.png">
+                <span>添加网元</span>
+            </div>
+            <div class="register-body" style=" padding-bottom: 5px;">
+                <table cellpadding="0" cellspacing="0" class="addtable">
+                    <tbody>
+                    <tr>
+                        <td class="td-title">网元类型：</td>
+                        <td class="td-body">
+                            <ul class="select-tab">
+                                <li><a class="a-btn active">MME</a></li>
+                                <li><a class="a-btn">SAEGW</a></li>
+                                <li><a class="a-btn">DNS</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-title"><span>*</span>网元名称：</td>
+                        <td class="td-body"><input type="text" placeholder="请输入网元名称" /></td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">厂家：</td>
+                        <td class="td-body">
+                            <ul class="select-tab">
+                                <li><a class="a-btn active">非度</a></li>
+                                <li><a class="a-btn">炎黄</a></li>
+                                <li><a class="a-btn">国创</a></li>
+                                <li><a class="a-btn">思特奇</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-title"><span>*</span>所属地市：</td>
+                        <td class="td-body"><select><option>合肥</option></select></td>
+                    </tr>
+                    <tr>
+                        <td class="td-title"><span>*</span>IP：</td>
+                        <td class="td-body"><input type="text" placeholder="请输入IP地址" /></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table cellpadding="0" cellspacing="0" class="addtable">
+                    <tbody>
+                    <tr>
+                        <td class="td-title">登录方式：</td>
+                        <td class="td-body">
+                            <ul class="select-tab">
+                                <li><a class="a-btn active">SSH</a></li>
+                                <li><a class="a-btn">TELENT</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-title"><span>*</span>端口：</td>
+                        <td class="td-body"><input type="text" placeholder="请输入端口号" /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="td-title"><span>*</span>用户名：</td>
+                        <td class="td-body"><input type="text" placeholder="请输入用户名" /></td>
+                    </tr>
+                    <tr>
+                        <td class="td-title"><span>*</span>密码：</td>
+                        <td class="td-body"><input type="text" placeholder="请输入密码" /><input type="button" class="btn1" value="连通性测试"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-title" style="vertical-align: top">备注：</td>
+                        <td class="td-body"><textarea></textarea></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="submit-btn-body">
+            <input type="button" class="btn1" value="保存">
+        </div>
+    </div>
+</div>
+</body>
+</html>
