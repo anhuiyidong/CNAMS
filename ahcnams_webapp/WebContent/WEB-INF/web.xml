@@ -157,6 +157,6 @@
 	</error-page>
   
 	<welcome-file-list>
-		<welcome-file>/finedo/auth/loginindex</welcome-file>
+		<welcome-file>/finedo/auth/index</welcome-file>
 	</welcome-file-list>
 </web-app>
