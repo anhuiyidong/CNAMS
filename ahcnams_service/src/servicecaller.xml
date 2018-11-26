@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>  
-<servicecaller defaulturl="http://localhost:8080/ahcnams_service/">
+<servicecaller defaulturl="http://localhost:8083/ahcnams_service/">
 	
 	<!-- 单点登录 -->
-	<server url="http://localhost:8080/ahcnams_service/">
+	<server url="http://localhost:8083/ahcnams_service/">
 		<serviceap name="service/finedo/sso/auth"/>
 		<serviceap name="service/finedo/sso/openauth"/>
 		<serviceap name="service/finedo/sso/quit"/>

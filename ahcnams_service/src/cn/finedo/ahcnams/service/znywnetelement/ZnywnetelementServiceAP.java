@@ -99,14 +99,14 @@ public class ZnywnetelementServiceAP {
 		items.add(new ValidateItem("elefactory", "所属厂家", false, DataType.STRING));
 		items.add(new ValidateItem("elenet", "局域网", false, DataType.STRING));
 		items.add(new ValidateItem("eletype", "网元类型", false, DataType.STRING));
-		items.add(new ValidateItem("creator", "创建者", false, DataType.STRING));
-		items.add(new ValidateItem("createtime", "创建时间", false, DataType.STRING));
+		//items.add(new ValidateItem("creator", "创建者", false, DataType.STRING));
+		//items.add(new ValidateItem("createtime", "创建时间", false, DataType.STRING));
 		items.add(new ValidateItem("city", "所属地市", false, DataType.STRING));
 		items.add(new ValidateItem("logintype", "登录类型", false, DataType.STRING));
 		items.add(new ValidateItem("port", "端口", false, DataType.STRING));
 		items.add(new ValidateItem("username", "用户名", false, DataType.STRING));
 		items.add(new ValidateItem("password", "密码", false, DataType.STRING));
-		items.add(new ValidateItem("remark", "备注", false, DataType.STRING));
+		//items.add(new ValidateItem("remark", "备注", false, DataType.STRING));
 		ReturnValueDomain<String> validret = ValidateUtil.checkForList(znywnetelementlist, items);
 		if (validret.hasFail()) {
 			return validret;
